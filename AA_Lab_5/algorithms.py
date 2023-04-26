@@ -56,6 +56,8 @@ def draw_graph(graph, title):
     plt.title(title)
     plt.axis('off')
     plt.show()
+    
+    
 def dijkstra(graph, start, target):
     distances = {vertex: float('inf') for vertex in graph}
     distances[start] = 0
