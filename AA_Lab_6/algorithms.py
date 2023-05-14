@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 from math import atan
 
 
-def bbpPi(n):
+def bbp(n):
     # Returns the nth decimal digit of Pi using the BBP formula.
     if n < 0:
         raise ValueError("Invalid value of n.")
@@ -72,7 +72,7 @@ if __name__ == "__main__":
 
     for nr in n:
         startTime = time.perf_counter()
-        bbpPi(nr)
+        bbp(nr)
         endTime = time.perf_counter()
         bbp_time.append(endTime - startTime)
         startTime = time.perf_counter()
